@@ -10,9 +10,9 @@ namespace LineComparisonProblem
             double[] lineLength = new double[2];
             for (int numOfLines = 0; numOfLines < 2; numOfLines++)
             {
-                lineLength[numOfLines] = line.calculateLength();
+                lineLength[numOfLines] = line.CalculateLength();
             }
-            line.compareLength(lineLength[0], lineLength[1]);
+            line.CompareLength(lineLength[0], lineLength[1]);
         }
     }
 }

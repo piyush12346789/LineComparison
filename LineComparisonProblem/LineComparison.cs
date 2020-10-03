@@ -6,7 +6,7 @@ namespace LineComparisonProblem
     class LineComparison
     {
         private int x1, x2, y1, y2;
-        public double calculateLength()
+        public double CalculateLength()
         {
             Console.WriteLine("Enter values x1 and y1 for Line 1");
             this.x1 = Convert.ToInt32(Console.ReadLine());
@@ -17,7 +17,7 @@ namespace LineComparisonProblem
             double length = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             return length;
         }
-        public void compareLength(double len1, double len2)
+        public void CompareLength(double len1, double len2)
         {
             int diffInLength = len1.CompareTo(len2);
             if (diffInLength == 0)
